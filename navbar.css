@@ -42,19 +42,21 @@
   border-radius: 5px;
   position: relative;
   padding: 2px;
+  overflow-x: hidden;
 }
 
 .nav__enlace::before {
   content: "";
   position: absolute;
   background: #fff;
-  width: 0px;
+  width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  transition: width 300ms;
+  transform: translateX(-150%);
+  transition: transform 300ms, display 300ms;
 }
 
 .nav__enlace:hover::before {
-  width: 100%;
+  transform: translateX(5%);
 }
