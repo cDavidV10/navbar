@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.header {
+.contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
@@ -14,14 +14,13 @@
   margin: 0 auto;
 }
 
-.nav-container,
-.title-container {
+.nav {
   display: grid;
   place-items: center;
   color: #fff;
 }
 
-.nav-container ul {
+.nav__ul {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -29,11 +28,11 @@
   list-style: none;
 }
 
-.nav-container li {
+.nav__li {
   height: 40px;
 }
 
-.nav-container a {
+.nav__enlace {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +44,7 @@
   padding: 2px;
 }
 
-.nav-container a::before {
+.nav__enlace::before {
   content: "";
   position: absolute;
   background: #fff;
@@ -56,7 +55,7 @@
   transition: all 300ms;
 }
 
-.nav-container a:hover::before {
+.nav__enlace:hover::before {
   display: flex;
   width: 100%;
 }
